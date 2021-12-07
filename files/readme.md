@@ -5,7 +5,7 @@ while the right chart is using a custom measure that sums all sales, excluding t
 <img src="SUMX_NoWeekends.PNG" alt="a" width="1080"/>
 
 
-## Meausure used by the slider
+## Calculated column used by the slider
 ```
 noWeekends = DATEADD(
                     tblInternetSales[OrderDate], 
@@ -20,7 +20,7 @@ noWeekends = DATEADD(
 ```
 
 
-## Meausure used by chart
+## Custom meausure used by the chart (the one on the right)
 ```
 sumSalesNoWeekends = SUMX(
                           tblInternetSales,
