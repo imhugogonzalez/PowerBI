@@ -2,7 +2,7 @@
 Left chart is using the default SUM measure to display the sales by date,
 while the right chart is using a custom measure that sums all sales, excluding the weekends (i.e. Saturdays and Sundays).
 
-<img src="files/SUMX_NoWeekends.PNG" alt="a" width="1080"/>
+<img src="SUMX_NoWeekends.PNG" alt="a" width="1080"/>
 
 
 ## Meausure used by the slider
