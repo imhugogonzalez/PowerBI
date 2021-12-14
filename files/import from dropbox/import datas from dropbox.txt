@@ -1,0 +1,12 @@
+let
+    data = [    path= "",
+                recursive=false,
+                include_media_info=false,
+                include_deleted=false,
+                include_has_explicit_shared_members=false],
+    header = [  #"Authorization"="Bearer WVYUZDVNUmIAAAAAAAAAASJqV7XwxxNIsvyIgpDfAqGV_IRTxO4ituxlpsw-4ldx",
+                #"Content-Type"= "application/json"],
+    response = Web.Contents("https://api.dropboxapi.com/2/files/list_folder",[Content=Json.FromValue(data),Headers=header]),
+    out = Json.Document(response,1252),entries = out[entries]
+in
+    out

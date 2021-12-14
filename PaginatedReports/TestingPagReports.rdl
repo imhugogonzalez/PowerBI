@@ -1,0 +1,540 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Report MustUnderstand="df" xmlns="http://schemas.microsoft.com/sqlserver/reporting/2016/01/reportdefinition" xmlns:rd="http://schemas.microsoft.com/SQLServer/reporting/reportdesigner" xmlns:df="http://schemas.microsoft.com/sqlserver/reporting/2016/01/reportdefinition/defaultfontfamily">
+  <rd:ReportUnitType>Inch</rd:ReportUnitType>
+  <rd:ReportID>4eca7c30-01f3-4cb9-9f55-7eb036bd188b</rd:ReportID>
+  <df:DefaultFontFamily>Segoe UI</df:DefaultFontFamily>
+  <AutoRefresh>0</AutoRefresh>
+  <DataSources>
+    <DataSource Name="DataSource1">
+      <rd:SecurityType>Integrated</rd:SecurityType>
+      <ConnectionProperties>
+        <DataProvider>PBIDATASET</DataProvider>
+        <ConnectString>Data Source=pbiazure://api.powerbi.com/;Identity Provider="https://login.microsoftonline.com/common, https://analysis.windows.net/powerbi/api, f0b72488-7082-488a-a7e8-eada97bd842d";Initial Catalog=sobe_wowvirtualserver-05b3669a-9447-4528-a929-669b673a6f7c;Integrated Security=ClaimsToken</ConnectString>
+        <IntegratedSecurity>true</IntegratedSecurity>
+      </ConnectionProperties>
+      <rd:DataSourceID>66e00913-38f5-4a46-bde6-a6e82f5b1c33</rd:DataSourceID>
+    </DataSource>
+  </DataSources>
+  <DataSets>
+    <DataSet Name="DataSet1">
+      <Query>
+        <DataSourceName>DataSource1</DataSourceName>
+        <rd:DesignerState>
+          <QueryDefinition xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://schemas.microsoft.com/AnalysisServices/QueryDefinition">
+            <CommandType>DAX</CommandType>
+            <QuerySpecification xsi:type="MDXQuerySpecification">
+              <Select>
+                <Items>
+                  <Item>
+                    <ID xsi:type="Level">
+                      <DimensionName>report_server temp_test_size_snapshot_table_power_bi</DimensionName>
+                      <HierarchyName>owner</HierarchyName>
+                      <HierarchyUniqueName>[report_server temp_test_size_snapshot_table_power_bi].[owner]</HierarchyUniqueName>
+                      <LevelName>owner</LevelName>
+                      <UniqueName>[report_server temp_test_size_snapshot_table_power_bi].[owner].[owner]</UniqueName>
+                    </ID>
+                    <ItemCaption>owner</ItemCaption>
+                    <UniqueName>true</UniqueName>
+                  </Item>
+                  <Item>
+                    <ID xsi:type="Level">
+                      <DimensionName>report_server temp_test_size_snapshot_table_power_bi</DimensionName>
+                      <HierarchyName>byr_exclusion</HierarchyName>
+                      <HierarchyUniqueName>[report_server temp_test_size_snapshot_table_power_bi].[byr_exclusion]</HierarchyUniqueName>
+                      <LevelName>byr_exclusion</LevelName>
+                      <UniqueName>[report_server temp_test_size_snapshot_table_power_bi].[byr_exclusion].[byr_exclusion]</UniqueName>
+                    </ID>
+                    <ItemCaption>byr_exclusion</ItemCaption>
+                    <UniqueName>true</UniqueName>
+                  </Item>
+                  <Item>
+                    <ID xsi:type="Level">
+                      <DimensionName>report_server temp_test_size_snapshot_table_power_bi</DimensionName>
+                      <HierarchyName>categories</HierarchyName>
+                      <HierarchyUniqueName>[report_server temp_test_size_snapshot_table_power_bi].[categories]</HierarchyUniqueName>
+                      <LevelName>categories</LevelName>
+                      <UniqueName>[report_server temp_test_size_snapshot_table_power_bi].[categories].[categories]</UniqueName>
+                    </ID>
+                    <ItemCaption>categories</ItemCaption>
+                    <UniqueName>true</UniqueName>
+                  </Item>
+                  <Item>
+                    <ID xsi:type="Level">
+                      <DimensionName>report_server temp_test_size_snapshot_table_power_bi</DimensionName>
+                      <HierarchyName>country_code</HierarchyName>
+                      <HierarchyUniqueName>[report_server temp_test_size_snapshot_table_power_bi].[country_code]</HierarchyUniqueName>
+                      <LevelName>country_code</LevelName>
+                      <UniqueName>[report_server temp_test_size_snapshot_table_power_bi].[country_code].[country_code]</UniqueName>
+                    </ID>
+                    <ItemCaption>country_code</ItemCaption>
+                    <UniqueName>true</UniqueName>
+                  </Item>
+                  <Item>
+                    <ID xsi:type="Level">
+                      <DimensionName>report_server temp_test_size_snapshot_table_power_bi</DimensionName>
+                      <HierarchyName>description</HierarchyName>
+                      <HierarchyUniqueName>[report_server temp_test_size_snapshot_table_power_bi].[description]</HierarchyUniqueName>
+                      <LevelName>description</LevelName>
+                      <UniqueName>[report_server temp_test_size_snapshot_table_power_bi].[description].[description]</UniqueName>
+                    </ID>
+                    <ItemCaption>description</ItemCaption>
+                    <UniqueName>true</UniqueName>
+                  </Item>
+                  <Item>
+                    <ID xsi:type="Level">
+                      <DimensionName>report_server temp_test_size_snapshot_table_power_bi</DimensionName>
+                      <HierarchyName>domain</HierarchyName>
+                      <HierarchyUniqueName>[report_server temp_test_size_snapshot_table_power_bi].[domain]</HierarchyUniqueName>
+                      <LevelName>domain</LevelName>
+                      <UniqueName>[report_server temp_test_size_snapshot_table_power_bi].[domain].[domain]</UniqueName>
+                    </ID>
+                    <ItemCaption>domain</ItemCaption>
+                    <UniqueName>true</UniqueName>
+                  </Item>
+                  <Item>
+                    <ID xsi:type="Level">
+                      <DimensionName>report_server temp_test_size_snapshot_table_power_bi</DimensionName>
+                      <HierarchyName>domain_cleaned</HierarchyName>
+                      <HierarchyUniqueName>[report_server temp_test_size_snapshot_table_power_bi].[domain_cleaned]</HierarchyUniqueName>
+                      <LevelName>domain_cleaned</LevelName>
+                      <UniqueName>[report_server temp_test_size_snapshot_table_power_bi].[domain_cleaned].[domain_cleaned]</UniqueName>
+                    </ID>
+                    <ItemCaption>domain_cleaned</ItemCaption>
+                    <UniqueName>true</UniqueName>
+                  </Item>
+                  <Item>
+                    <ID xsi:type="Level">
+                      <DimensionName>report_server temp_test_size_snapshot_table_power_bi</DimensionName>
+                      <HierarchyName>employee_count</HierarchyName>
+                      <HierarchyUniqueName>[report_server temp_test_size_snapshot_table_power_bi].[employee_count]</HierarchyUniqueName>
+                      <LevelName>employee_count</LevelName>
+                      <UniqueName>[report_server temp_test_size_snapshot_table_power_bi].[employee_count].[employee_count]</UniqueName>
+                    </ID>
+                    <ItemCaption>employee_count</ItemCaption>
+                    <UniqueName>true</UniqueName>
+                  </Item>
+                  <Item>
+                    <ID xsi:type="Level">
+                      <DimensionName>report_server temp_test_size_snapshot_table_power_bi</DimensionName>
+                      <HierarchyName>id</HierarchyName>
+                      <HierarchyUniqueName>[report_server temp_test_size_snapshot_table_power_bi].[id]</HierarchyUniqueName>
+                      <LevelName>id</LevelName>
+                      <UniqueName>[report_server temp_test_size_snapshot_table_power_bi].[id].[id]</UniqueName>
+                    </ID>
+                    <ItemCaption>id</ItemCaption>
+                    <UniqueName>true</UniqueName>
+                  </Item>
+                  <Item>
+                    <ID xsi:type="Level">
+                      <DimensionName>report_server temp_test_size_snapshot_table_power_bi</DimensionName>
+                      <HierarchyName>ntld</HierarchyName>
+                      <HierarchyUniqueName>[report_server temp_test_size_snapshot_table_power_bi].[ntld]</HierarchyUniqueName>
+                      <LevelName>ntld</LevelName>
+                      <UniqueName>[report_server temp_test_size_snapshot_table_power_bi].[ntld].[ntld]</UniqueName>
+                    </ID>
+                    <ItemCaption>ntld</ItemCaption>
+                    <UniqueName>true</UniqueName>
+                  </Item>
+                </Items>
+              </Select>
+              <AutoExecute>false</AutoExecute>
+              <From>Model</From>
+              <Filter>
+                <FilterItems />
+              </Filter>
+              <Calculations />
+              <Aggregates />
+              <QueryProperties>
+                <IncludeMemberValue>true</IncludeMemberValue>
+              </QueryProperties>
+            </QuerySpecification>
+            <Query>
+              <Statement>EVALUATE SUMMARIZECOLUMNS('report_server temp_test_size_snapshot_table_power_bi'[owner], 'report_server temp_test_size_snapshot_table_power_bi'[byr_exclusion], 'report_server temp_test_size_snapshot_table_power_bi'[categories], 'report_server temp_test_size_snapshot_table_power_bi'[country_code], 'report_server temp_test_size_snapshot_table_power_bi'[description], 'report_server temp_test_size_snapshot_table_power_bi'[domain], 'report_server temp_test_size_snapshot_table_power_bi'[domain_cleaned], 'report_server temp_test_size_snapshot_table_power_bi'[employee_count], 'report_server temp_test_size_snapshot_table_power_bi'[id], 'report_server temp_test_size_snapshot_table_power_bi'[ntld])</Statement>
+              <ParameterDefinitions />
+            </Query>
+          </QueryDefinition>
+        </rd:DesignerState>
+        <CommandText>EVALUATE SUMMARIZECOLUMNS('report_server temp_test_size_snapshot_table_power_bi'[owner], 'report_server temp_test_size_snapshot_table_power_bi'[byr_exclusion], 'report_server temp_test_size_snapshot_table_power_bi'[categories], 'report_server temp_test_size_snapshot_table_power_bi'[country_code], 'report_server temp_test_size_snapshot_table_power_bi'[description], 'report_server temp_test_size_snapshot_table_power_bi'[domain], 'report_server temp_test_size_snapshot_table_power_bi'[domain_cleaned], 'report_server temp_test_size_snapshot_table_power_bi'[employee_count], 'report_server temp_test_size_snapshot_table_power_bi'[id], 'report_server temp_test_size_snapshot_table_power_bi'[ntld])</CommandText>
+      </Query>
+      <Fields>
+        <Field Name="owner">
+          <rd:TypeName>System.String</rd:TypeName>
+          <DataField>report_server temp_test_size_snapshot_table_power_bi[owner]</DataField>
+        </Field>
+        <Field Name="byr_exclusion">
+          <rd:TypeName>System.String</rd:TypeName>
+          <DataField>report_server temp_test_size_snapshot_table_power_bi[byr_exclusion]</DataField>
+        </Field>
+        <Field Name="categories">
+          <rd:TypeName>System.String</rd:TypeName>
+          <DataField>report_server temp_test_size_snapshot_table_power_bi[categories]</DataField>
+        </Field>
+        <Field Name="country_code">
+          <rd:TypeName>System.String</rd:TypeName>
+          <DataField>report_server temp_test_size_snapshot_table_power_bi[country_code]</DataField>
+        </Field>
+        <Field Name="description">
+          <rd:TypeName>System.String</rd:TypeName>
+          <DataField>report_server temp_test_size_snapshot_table_power_bi[description]</DataField>
+        </Field>
+        <Field Name="domain">
+          <rd:TypeName>System.String</rd:TypeName>
+          <DataField>report_server temp_test_size_snapshot_table_power_bi[domain]</DataField>
+        </Field>
+        <Field Name="domain_cleaned">
+          <rd:TypeName>System.String</rd:TypeName>
+          <DataField>report_server temp_test_size_snapshot_table_power_bi[domain_cleaned]</DataField>
+        </Field>
+        <Field Name="employee_count">
+          <rd:TypeName>System.String</rd:TypeName>
+          <DataField>report_server temp_test_size_snapshot_table_power_bi[employee_count]</DataField>
+        </Field>
+        <Field Name="id">
+          <rd:TypeName>System.String</rd:TypeName>
+          <DataField>report_server temp_test_size_snapshot_table_power_bi[id]</DataField>
+        </Field>
+        <Field Name="ntld">
+          <rd:TypeName>System.String</rd:TypeName>
+          <DataField>report_server temp_test_size_snapshot_table_power_bi[ntld]</DataField>
+        </Field>
+      </Fields>
+    </DataSet>
+  </DataSets>
+  <ReportSections>
+    <ReportSection>
+      <Body>
+        <ReportItems>
+          <Textbox Name="ReportTitle">
+            <rd:WatermarkTextbox>Title</rd:WatermarkTextbox>
+            <rd:DefaultName>ReportTitle</rd:DefaultName>
+            <CanGrow>true</CanGrow>
+            <KeepTogether>true</KeepTogether>
+            <Paragraphs>
+              <Paragraph>
+                <TextRuns>
+                  <TextRun>
+                    <Value />
+                    <Style>
+                      <FontFamily>Segoe UI Light</FontFamily>
+                      <FontSize>28pt</FontSize>
+                    </Style>
+                  </TextRun>
+                </TextRuns>
+                <Style />
+              </Paragraph>
+            </Paragraphs>
+            <Height>0.5in</Height>
+            <Width>5.5in</Width>
+            <Style>
+              <Border>
+                <Style>None</Style>
+              </Border>
+              <PaddingLeft>2pt</PaddingLeft>
+              <PaddingRight>2pt</PaddingRight>
+              <PaddingTop>2pt</PaddingTop>
+              <PaddingBottom>2pt</PaddingBottom>
+            </Style>
+          </Textbox>
+          <Tablix Name="Tablix1">
+            <TablixBody>
+              <TablixColumns>
+                <TablixColumn>
+                  <Width>1.90278in</Width>
+                </TablixColumn>
+                <TablixColumn>
+                  <Width>1.90278in</Width>
+                </TablixColumn>
+                <TablixColumn>
+                  <Width>1.90278in</Width>
+                </TablixColumn>
+              </TablixColumns>
+              <TablixRows>
+                <TablixRow>
+                  <Height>1.55444in</Height>
+                  <TablixCells>
+                    <TablixCell>
+                      <CellContents>
+                        <Textbox Name="Textbox2">
+                          <rd:DefaultName>Textbox2</rd:DefaultName>
+                          <CanGrow>true</CanGrow>
+                          <KeepTogether>true</KeepTogether>
+                          <Paragraphs>
+                            <Paragraph>
+                              <TextRuns>
+                                <TextRun>
+                                  <Value>categories</Value>
+                                  <Style />
+                                </TextRun>
+                              </TextRuns>
+                              <Style />
+                            </Paragraph>
+                          </Paragraphs>
+                          <Style>
+                            <Border>
+                              <Color>LightGrey</Color>
+                              <Style>Solid</Style>
+                            </Border>
+                            <PaddingLeft>2pt</PaddingLeft>
+                            <PaddingRight>2pt</PaddingRight>
+                            <PaddingTop>2pt</PaddingTop>
+                            <PaddingBottom>2pt</PaddingBottom>
+                          </Style>
+                        </Textbox>
+                      </CellContents>
+                    </TablixCell>
+                    <TablixCell>
+                      <CellContents>
+                        <Textbox Name="Textbox4">
+                          <rd:DefaultName>Textbox4</rd:DefaultName>
+                          <CanGrow>true</CanGrow>
+                          <KeepTogether>true</KeepTogether>
+                          <Paragraphs>
+                            <Paragraph>
+                              <TextRuns>
+                                <TextRun>
+                                  <Value>domain</Value>
+                                  <Style />
+                                </TextRun>
+                              </TextRuns>
+                              <Style />
+                            </Paragraph>
+                          </Paragraphs>
+                          <Style>
+                            <Border>
+                              <Color>LightGrey</Color>
+                              <Style>Solid</Style>
+                            </Border>
+                            <PaddingLeft>2pt</PaddingLeft>
+                            <PaddingRight>2pt</PaddingRight>
+                            <PaddingTop>2pt</PaddingTop>
+                            <PaddingBottom>2pt</PaddingBottom>
+                          </Style>
+                        </Textbox>
+                      </CellContents>
+                    </TablixCell>
+                    <TablixCell>
+                      <CellContents>
+                        <Textbox Name="Textbox6">
+                          <rd:DefaultName>Textbox6</rd:DefaultName>
+                          <CanGrow>true</CanGrow>
+                          <KeepTogether>true</KeepTogether>
+                          <Paragraphs>
+                            <Paragraph>
+                              <TextRuns>
+                                <TextRun>
+                                  <Value>country code</Value>
+                                  <Style />
+                                </TextRun>
+                              </TextRuns>
+                              <Style />
+                            </Paragraph>
+                          </Paragraphs>
+                          <Style>
+                            <Border>
+                              <Color>LightGrey</Color>
+                              <Style>Solid</Style>
+                            </Border>
+                            <PaddingLeft>2pt</PaddingLeft>
+                            <PaddingRight>2pt</PaddingRight>
+                            <PaddingTop>2pt</PaddingTop>
+                            <PaddingBottom>2pt</PaddingBottom>
+                          </Style>
+                        </Textbox>
+                      </CellContents>
+                    </TablixCell>
+                  </TablixCells>
+                </TablixRow>
+                <TablixRow>
+                  <Height>1.55444in</Height>
+                  <TablixCells>
+                    <TablixCell>
+                      <CellContents>
+                        <Textbox Name="categories">
+                          <rd:DefaultName>categories</rd:DefaultName>
+                          <CanGrow>true</CanGrow>
+                          <KeepTogether>true</KeepTogether>
+                          <Paragraphs>
+                            <Paragraph>
+                              <TextRuns>
+                                <TextRun>
+                                  <Value>=Fields!categories.Value</Value>
+                                  <Style />
+                                </TextRun>
+                              </TextRuns>
+                              <Style />
+                            </Paragraph>
+                          </Paragraphs>
+                          <Style>
+                            <Border>
+                              <Color>LightGrey</Color>
+                              <Style>Solid</Style>
+                            </Border>
+                            <PaddingLeft>2pt</PaddingLeft>
+                            <PaddingRight>2pt</PaddingRight>
+                            <PaddingTop>2pt</PaddingTop>
+                            <PaddingBottom>2pt</PaddingBottom>
+                          </Style>
+                        </Textbox>
+                      </CellContents>
+                    </TablixCell>
+                    <TablixCell>
+                      <CellContents>
+                        <Textbox Name="domain">
+                          <rd:DefaultName>domain</rd:DefaultName>
+                          <CanGrow>true</CanGrow>
+                          <KeepTogether>true</KeepTogether>
+                          <Paragraphs>
+                            <Paragraph>
+                              <TextRuns>
+                                <TextRun>
+                                  <Value>=Fields!domain.Value</Value>
+                                  <Style />
+                                </TextRun>
+                              </TextRuns>
+                              <Style />
+                            </Paragraph>
+                          </Paragraphs>
+                          <Style>
+                            <Border>
+                              <Color>LightGrey</Color>
+                              <Style>Solid</Style>
+                            </Border>
+                            <PaddingLeft>2pt</PaddingLeft>
+                            <PaddingRight>2pt</PaddingRight>
+                            <PaddingTop>2pt</PaddingTop>
+                            <PaddingBottom>2pt</PaddingBottom>
+                          </Style>
+                        </Textbox>
+                      </CellContents>
+                    </TablixCell>
+                    <TablixCell>
+                      <CellContents>
+                        <Textbox Name="country_code">
+                          <rd:DefaultName>country_code</rd:DefaultName>
+                          <CanGrow>true</CanGrow>
+                          <KeepTogether>true</KeepTogether>
+                          <Paragraphs>
+                            <Paragraph>
+                              <TextRuns>
+                                <TextRun>
+                                  <Value>=Fields!country_code.Value</Value>
+                                  <Style />
+                                </TextRun>
+                              </TextRuns>
+                              <Style />
+                            </Paragraph>
+                          </Paragraphs>
+                          <Style>
+                            <Border>
+                              <Color>LightGrey</Color>
+                              <Style>Solid</Style>
+                            </Border>
+                            <PaddingLeft>2pt</PaddingLeft>
+                            <PaddingRight>2pt</PaddingRight>
+                            <PaddingTop>2pt</PaddingTop>
+                            <PaddingBottom>2pt</PaddingBottom>
+                          </Style>
+                        </Textbox>
+                      </CellContents>
+                    </TablixCell>
+                  </TablixCells>
+                </TablixRow>
+              </TablixRows>
+            </TablixBody>
+            <TablixColumnHierarchy>
+              <TablixMembers>
+                <TablixMember />
+                <TablixMember />
+                <TablixMember />
+              </TablixMembers>
+            </TablixColumnHierarchy>
+            <TablixRowHierarchy>
+              <TablixMembers>
+                <TablixMember>
+                  <KeepWithGroup>After</KeepWithGroup>
+                </TablixMember>
+                <TablixMember>
+                  <Group Name="Details" />
+                </TablixMember>
+              </TablixMembers>
+            </TablixRowHierarchy>
+            <DataSetName>DataSet1</DataSetName>
+            <Top>0.91542in</Top>
+            <Left>0.14458in</Left>
+            <Height>3.10889in</Height>
+            <Width>5.70833in</Width>
+            <ZIndex>1</ZIndex>
+            <Style>
+              <Border>
+                <Style>None</Style>
+              </Border>
+            </Style>
+          </Tablix>
+        </ReportItems>
+        <Height>4.09375in</Height>
+        <Style>
+          <Border>
+            <Style>None</Style>
+          </Border>
+        </Style>
+      </Body>
+      <Width>6in</Width>
+      <Page>
+        <PageFooter>
+          <Height>0.45in</Height>
+          <PrintOnFirstPage>true</PrintOnFirstPage>
+          <PrintOnLastPage>true</PrintOnLastPage>
+          <ReportItems>
+            <Textbox Name="ExecutionTime">
+              <rd:DefaultName>ExecutionTime</rd:DefaultName>
+              <CanGrow>true</CanGrow>
+              <KeepTogether>true</KeepTogether>
+              <Paragraphs>
+                <Paragraph>
+                  <TextRuns>
+                    <TextRun>
+                      <Value>=Globals!ExecutionTime</Value>
+                      <Style />
+                    </TextRun>
+                  </TextRuns>
+                  <Style>
+                    <TextAlign>Right</TextAlign>
+                  </Style>
+                </Paragraph>
+              </Paragraphs>
+              <Top>0.2in</Top>
+              <Left>4in</Left>
+              <Height>0.25in</Height>
+              <Width>2in</Width>
+              <Style>
+                <Border>
+                  <Style>None</Style>
+                </Border>
+                <PaddingLeft>2pt</PaddingLeft>
+                <PaddingRight>2pt</PaddingRight>
+                <PaddingTop>2pt</PaddingTop>
+                <PaddingBottom>2pt</PaddingBottom>
+              </Style>
+            </Textbox>
+          </ReportItems>
+          <Style>
+            <Border>
+              <Style>None</Style>
+            </Border>
+          </Style>
+        </PageFooter>
+        <LeftMargin>1in</LeftMargin>
+        <RightMargin>1in</RightMargin>
+        <TopMargin>1in</TopMargin>
+        <BottomMargin>1in</BottomMargin>
+        <Style />
+      </Page>
+    </ReportSection>
+  </ReportSections>
+  <ReportParametersLayout>
+    <GridLayoutDefinition>
+      <NumberOfColumns>4</NumberOfColumns>
+      <NumberOfRows>2</NumberOfRows>
+    </GridLayoutDefinition>
+  </ReportParametersLayout>
+</Report>
